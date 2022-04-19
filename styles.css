@@ -1,0 +1,63 @@
+@font-face{
+    font-family: SpaceMission;
+    src : url("./assets/SpaceMission-rgyw9.otf") format("opentype");
+}
+@font-face {
+    font-family: nasa;
+    src: url("./assets/Nasa.ttf") format("truetype");
+}
+@font-face {
+    font-family: atari;
+    src: url("./assets/SF Atarian System.ttf") format("truetype");
+}
+
+header{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    background-color: rgba(240, 255, 255, .65);
+    text-align: center;
+    font-family: 'SpaceMission';
+    font-size : 70;
+    width : 750px;
+    height: 100px;
+}
+
+body {
+    background-image: url('./assets/Space-Background.jpeg');
+    background-size: cover;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.player1-area{
+    background-color: rgba(240, 255, 255, .65);
+    text-align: center;
+    width : 25%;
+    height: 200px;
+    margin: 25px;
+}
+.player2-area {
+    background-color: rgba(240, 255, 255, .65);
+    text-align: center;
+    width: 25%;
+    height: 200px;
+    margin: 25px;
+}
+.game-area {
+    background-color: rgba(240, 255, 255, .65);
+    text-align: center;
+    width: 50%;
+    height: 600px;
+    margin: 25px;
+}
+.move-indicator{
+    font-size : 50;
+    font-family: 'atari';
+    margin-top: 0px;
+}
