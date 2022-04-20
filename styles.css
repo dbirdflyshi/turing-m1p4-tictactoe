@@ -1,14 +1,11 @@
 @font-face{
     font-family: SpaceMission;
-    src : url("./assets/SpaceMission-rgyw9.otf") format("opentype");
+    src : url("./assets/fonts/SpaceMission-rgyw9.otf") format("opentype");
 }
-@font-face {
-    font-family: nasa;
-    src: url("./assets/Nasa.ttf") format("truetype");
-}
+
 @font-face {
     font-family: atari;
-    src: url("./assets/SF Atarian System.ttf") format("truetype");
+    src: url("./assets/fonts/SF Atarian System.ttf") format("truetype");
 }
 
 header{
@@ -24,10 +21,10 @@ header{
     height: 100px;
 }
 
-body {
-    background-image: url('./assets/Space-Background.jpeg');
+/* body {
+    background: url('./assets/images/2.jpg');
     background-size: cover;
-}
+} */
 
 section{
     display: flex;
@@ -35,20 +32,20 @@ section{
     justify-content: center;
 }
 
-.player1-area{
-    background-color: rgba(240, 255, 255, .65);
-    text-align: center;
-    width : 25%;
-    height: 200px;
-    margin: 25px;
+.player-title, .player-1-win-count, .player-2-win-count, .move-indicator {
+    font-family: atari;
+    font-size: 50;
+    margin: 0px;
 }
-.player2-area {
+
+.player1-area, .player2-area{
     background-color: rgba(240, 255, 255, .65);
     text-align: center;
     width: 25%;
     height: 200px;
     margin: 25px;
 }
+
 .game-area {
     background-color: rgba(240, 255, 255, .65);
     text-align: center;
@@ -56,8 +53,27 @@ section{
     height: 600px;
     margin: 25px;
 }
-.move-indicator{
-    font-size : 50;
-    font-family: 'atari';
-    margin-top: 0px;
+
+table{
+    margin:auto;
+    height: 80%;
+    width: 80%;
+    border-collapse: collapse;
+}
+td {
+    border: 3px solid #000000;
+    text-align: center;
+    padding: 8px;
+}
+td:first-child{
+    border-left: none;
+}
+td:last-child {
+    border-right: none;
+}
+tr:first-child td {
+    border-top: none;
+}
+tr:last-child td {
+    border-bottom: none;
 }
