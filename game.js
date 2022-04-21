@@ -168,7 +168,3 @@ class Game{
         }
     }
 }
-
-var game = new Game();
-game.board = { a1: game.players[1].token, a2: game.players[1].token, a3: game.players[1].token, b1: '', b2: '', b3: game.players[0].token, c1: '', c2: '', c3: '' }
-game.winConditions();
