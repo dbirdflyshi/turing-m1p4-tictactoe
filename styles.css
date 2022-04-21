@@ -21,11 +21,6 @@ header{
     height: 100px;
 }
 
-/* body {
-    background: url('./assets/images/2.jpg');
-    background-size: cover;
-} */
-
 section{
     display: flex;
     flex-direction: row;
