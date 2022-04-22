@@ -128,6 +128,7 @@ class Game{
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     checkDraw(){
         if (this.board['a1'] !== null && this.board['a2'] !== null && this.board['a3'] !== null && this.board['b1'] !== null && this.board['b2'] !== null && this.board['b3'] !== null && this.board['c1'] !== null && this.board['c2'] !== null && this.board['c3'] !== null){
+            game.tieGame()
             game.tieResetBoard();
         }
     }
@@ -142,6 +143,10 @@ class Game{
         this.players[0].increaseLosses();
         this.won = this.players[1];
     }    
+    tieGame(){
+        this.players[1].increaseTies();
+        this.players[0].increaseTies();
+    }
 
     // How will a player win?
     winConditions(){ 
