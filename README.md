@@ -1,7 +1,7 @@
 # Space Wars!
 ## Table of Contents
-* Introduction
-* Project Specifications
+* [Introduction](https://github.com/dbirdflyshi/turing-m1p4-tictactoe/blob/main/README.md#introduction)
+* [Project Specifications](https://github.com/dbirdflyshi/turing-m1p4-tictactoe/blob/main/README.md#project specifications)
 * Learning goals for the project
 * Features
 * Possible feature extensions
