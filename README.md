@@ -57,7 +57,7 @@ The spec for this project can be found [here](https://frontend.turing.edu/projec
 ![](demo.gif)
 
 ## Deployed Page
-You can view the published page [Here]()
+You can view the published page [Here](https://dbirdflyshi.github.io/turing-m1p4-tictactoe/)
 
 ## Sources
 * [Keeping the table the same size regardless of content](https://stackoverflow.com/questions/4457506/set-the-table-column-width-constant-regardless-of-the-amount-of-text-in-its-cell) 
