@@ -54,12 +54,15 @@ table{
     height: 80%;
     width: 80%;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 td {
     border: 3px solid #000000;
     text-align: center;
     padding: 8px;
     font-size: 50;
+    width: 33.33%;
+    height: 33.33%;
 }
 td:first-child{
     border-left: none;
