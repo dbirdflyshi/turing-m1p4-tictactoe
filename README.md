@@ -45,6 +45,9 @@ The spec for this project can be found [here](https://frontend.turing.edu/projec
 * Integrate it to be single player with an AI to play the game with you
 * Ability to choose your tokens
 
+## Video Demo
+![](demo.gif)
+
 ## Deployed Page
 You can view the published page [Here]()
 
