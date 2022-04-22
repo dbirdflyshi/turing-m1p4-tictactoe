@@ -2,12 +2,12 @@
 ## Table of Contents
 * [Introduction](https://github.com/dbirdflyshi/turing-m1p4-tictactoe/blob/main/README.md#introduction) 
 * [Project Specifications](https://github.com/dbirdflyshi/turing-m1p4-tictactoe/blob/main/README.md#project-specifications)
-* Learning goals for the project
-* Features
-* Possible feature extensions
-* Video demo
-* Deployed page
-* Sources
+* [Learning goals for the project](https://github.com/dbirdflyshi/turing-m1p4-tictactoe/blob/main/README.md#learning-goals-for-the-project)
+* [Features](https://github.com/dbirdflyshi/turing-m1p4-tictactoe/blob/main/README.md#features)
+* [Possible feature extensions](https://github.com/dbirdflyshi/turing-m1p4-tictactoe/blob/main/README.md#possible-feature-extensions)
+* [Video demo](https://github.com/dbirdflyshi/turing-m1p4-tictactoe/blob/main/README.md#video-demo)
+* [Deployed page](https://github.com/dbirdflyshi/turing-m1p4-tictactoe/blob/main/README.md#deployed-page)
+* [Sources](https://github.com/dbirdflyshi/turing-m1p4-tictactoe/blob/main/README.md#sources)
 
 ## Introduction
 `Now that you’ve got the main foundations down to build out a frontend application, it’s time to prove to yourself that you own those skills! You’re going to be building a Tic Tac Toe game from scratch!`
