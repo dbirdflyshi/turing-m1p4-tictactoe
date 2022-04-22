@@ -4,7 +4,7 @@ class Player{
         this.token = token;
         this.wins = 0;
         this.losses = 0;
-        this.ties = 0;
+        this.draws = 0;
     }
     increaseWins(){
         this.wins ++;
@@ -13,8 +13,6 @@ class Player{
         this.losses ++;
     }
     increaseTies(){
-        this.ties ++;
+        this.draws ++;
     }
 }
-
-module.exports = Player

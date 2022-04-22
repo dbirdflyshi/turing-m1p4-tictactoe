@@ -1,16 +1,34 @@
-const Player = require('./player')
 class Game{
     constructor(){
-        this.board = {a1:'', a2:'', a3:'', b1:'', b2:'', b3:'', c1:'', c2:'', c3:''};
-        this.turn;
+        this.board = { a1: null, a2: null, a3: null, b1: null, b2: null, b3: null, c1: null, c2: null, c3: null};
         this.players = [new Player(1, '🛸'), new Player(2, '🚀')];
+        this.turn = this.players[0];
+        this.won;
+    }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Resetting the board
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    resetBoard(){
+        this.board = { a1: null, a2: null, a3: null, b1: null, b2: null, b3: null, c1: null, c2: null, c3: null };
+        if(this.won.playerId === 1){
+            this.turn = this.players[1];
+        } else {
+            this.turn = this.players[0];
+        }
+        moveIndicator.innerText = game.won.token + " Won!"
+        window.setTimeout(reDrawSite,2000);
     }
 
-    // Resetting the board
-    resetBoard(){
-        this.board = { a1: '', a2: '', a3: '', b1: '', b2: '', b3: '', c1: '', c2: '', c3: '' }
+    tieResetBoard(){
+        this.board = { a1: null, a2: null, a3: null, b1: null, b2: null, b3: null, c1: null, c2: null, c3: null };
         this.turn = this.players[0];
+        moveIndicator.innerText = "It's A Draw!"
+        window.setTimeout(reDrawSite, 2000);
     }
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Switching the players
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     switchPlayers(){
         if(this.turn === this.players[0]){
             this.turn = this.players[1]
@@ -19,152 +37,164 @@ class Game{
         }
     }
 
-    // Adding tokens to the board functions
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Adding tokens to the board
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     addTo_a1(){
-        if (this.turn === this.player[0] && this.board['a1'] === ''){
+        if (this.turn === this.players[0] && this.board['a1'] === null){
             this.board['a1'] = this.players[0].token
-        } else if (this.board['a1'] === ''){
+            this.switchPlayers();
+        } else if (this.board['a1'] === null){
             this.board['a1'] = this.players[1].token
+            this.switchPlayers();
         }
-        switchPlayers();
+        console.log(this.board)
     }
     addTo_a2() {
-        if (this.turn === this.player[0] && this.board['a2'] === '') {
+        if (this.turn === this.players[0] && this.board['a2'] === null) {
             this.board['a2'] = this.players[0].token
-        } else {
+            this.switchPlayers();
+        } else if (this.board['a2'] === null) {
             this.board['a2'] = this.players[1].token
+            this.switchPlayers();
         }
-        switchPlayers();
     } 
     addTo_a3() {
-        if (this.turn === this.player[0] && this.board['a3'] === '') {
+        if (this.turn === this.players[0] && this.board['a3'] === null) {
             this.board['a3'] = this.players[0].token
-        } else {
+            this.switchPlayers();
+        } else if (this.board['a3'] === null) {
             this.board['a3'] = this.players[1].token
+            this.switchPlayers();
         }
-        switchPlayers();
     } 
     addTo_b1() {
-        if (this.turn === this.player[0] && this.board['b1'] != '') {
+        if (this.turn === this.players[0] && this.board['b1'] === null) {
             this.board['b1'] = this.players[0].token
-        } else {
+            this.switchPlayers();
+        } else if (this.board['b1'] === null) {
             this.board['b1'] = this.players[1].token
+            this.switchPlayers();
         }
-        switchPlayers();
     } 
     addTo_b2() {
-        if (this.turn === this.player[0] && this.board['b2'] != '') {
+        if (this.turn === this.players[0] && this.board['b2'] === null) {
             this.board['b2'] = this.players[0].token
-        } else {
+            this.switchPlayers();
+        } else if (this.board['b2'] === null) {
             this.board['b2'] = this.players[1].token
+            this.switchPlayers();
         }
-        switchPlayers();
     } 
     addTo_b3() {
-        if (this.turn === this.player[0] && this.board['b3'] != '') {
+        if (this.turn === this.players[0] && this.board['b3'] === null) {
             this.board['b3'] = this.players[0].token
-        } else {
+            this.switchPlayers();
+        } else if (this.board['b3'] === null) {
             this.board['b3'] = this.players[1].token
+            this.switchPlayers();
         }
-        switchPlayers();
     }
     addTo_c1() {
-        if (this.turn === this.player[0] && this.board['c1'] != '') {
+        if (this.turn === this.players[0] && this.board['c1'] === null) {
             this.board['c1'] = this.players[0].token
-        } else {
+            this.switchPlayers();
+        } else if (this.board['c1'] === null) {
             this.board['c1'] = this.players[1].token
+            this.switchPlayers();
         }
-        switchPlayers();
     }
     addTo_c2() {
-        if (this.turn === this.player[0] && this.board['c2'] != '') {
+        if (this.turn === this.players[0] && this.board['c2'] === null) {
             this.board['c2'] = this.players[0].token
-        } else {
+            this.switchPlayers();
+        } else if (this.board['c2'] === null) {
             this.board['c2'] = this.players[1].token
+            this.switchPlayers();
         }
-        switchPlayers();
     }
     addTo_c3() {
-        if (this.turn === this.player[0] && this.board['c3'] != '') {
+        if (this.turn === this.players[0] && this.board['c3'] === null) {
             this.board['c3'] = this.players[0].token
-        } else {
+            this.switchPlayers();
+        } else if (this.board['c3'] === null) {
             this.board['c3'] = this.players[1].token
+            this.switchPlayers();
         }
-        switchPlayers();
     }
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Checking Win Draw or Loss Conditions
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    checkDraw(){
+        if (this.board['a1'] !== null && this.board['a2'] !== null && this.board['a3'] !== null && this.board['b1'] !== null && this.board['b2'] !== null && this.board['b3'] !== null && this.board['c1'] !== null && this.board['c2'] !== null && this.board['c3'] !== null){
+            game.tieResetBoard();
+        }
+    }
+    playerOneWon(){
+        this.players[0].increaseWins();
+        this.players[1].increaseLosses();
+        this.won = this.players[0];
+    }
+
+    playerTwoWon() {
+        this.players[1].increaseWins();
+        this.players[0].increaseLosses();
+        this.won = this.players[1];
+    }    
 
     // How will a player win?
     winConditions(){ 
         // Player 1 checks
         if (this.board['a1'] === this.players[0].token && this.board['a2'] === this.players[0].token && this.board['a3'] === this.players[0].token){
-            this.players[0].increaseWins(); // Player 1 top row win
-            this.players[1].increaseLosses();
+            this.playerOneWon() // Player 1 top row win
             this.resetBoard() 
         } else if (this.board['b1'] === this.players[0].token && this.board['b2'] === this.players[0].token && this.board['b3'] === this.players[0].token) {
-            this.players[0].increaseWins(); // Player 1 middle row win
-            this.players[1].increaseLosses();
+            this.playerOneWon()  // Player 1 middle row win
             this.resetBoard()
         } else if (this.board['c1'] === this.players[0].token && this.board['c2'] === this.players[0].token && this.board['c3'] === this.players[0].token) {
-            this.players[0].increaseWins(); // Player 1 bottom row win
-            this.players[1].increaseLosses();
+            this.playerOneWon()  // Player 1 bottom row win
             this.resetBoard()
         } else if (this.board['a1'] === this.players[0].token && this.board['b1'] === this.players[0].token && this.board['c1'] === this.players[0].token) {
-            this.players[0].increaseWins(); // Player 1 left column win
-            this.players[1].increaseLosses();
+            this.playerOneWon()  // Player 1 left column win
             this.resetBoard()
         } else if (this.board['a2'] === this.players[0].token && this.board['b2'] === this.players[0].token && this.board['c2'] === this.players[0].token) {
-            this.players[0].increaseWins(); // Player 1 middle column win
-            this.players[1].increaseLosses();
+            this.playerOneWon()  // Player 1 middle column win
             this.resetBoard()
         } else if (this.board['a3'] === this.players[0].token && this.board['b3'] === this.players[0].token && this.board['c3'] === this.players[0].token) {
-            this.players[0].increaseWins(); // Player 1 right column win
-            this.players[1].increaseLosses();
+            playerOneWon()  // Player 1 right column win
             this.resetBoard()
         } else if (this.board['a1'] === this.players[0].token && this.board['b2'] === this.players[0].token && this.board['c3'] === this.players[0].token) {
-            this.players[0].increaseWins(); // Player 1 back-slash win
-            this.players[1].increaseLosses();
+            this.playerOneWon()  // Player 1 back-slash win
             this.resetBoard()
         } else if (this.board['a3'] === this.players[0].token && this.board['b2'] === this.players[0].token && this.board['c1'] === this.players[0].token) {
-            this.players[0].increaseWins(); // Player 1 forward-slash win
-            this.players[1].increaseLosses();
+            this.playerOneWon()  // Player 1 forward-slash win
             this.resetBoard()
         // Player 2 checks
-        if (this.board['a1'] === this.players[1].token && this.board['a2'] === this.players[1].token && this.board['a3'] === this.players[1].token) {
-            this.players[1].increaseWins(); // Player 2 top row win
-            this.players[0].increaseLosses();
+        } else if (this.board['a1'] === this.players[1].token && this.board['a2'] === this.players[1].token && this.board['a3'] === this.players[1].token) {
+            this.playerTwoWon()  // Player 2 top row win
             this.resetBoard()
         } else if (this.board['b1'] === this.players[1].token && this.board['b2'] === this.players[1].token && this.board['b3'] === this.players[1].token) {
-            this.players[1].increaseWins(); // Player 2 middle row win
-            this.players[0].increaseLosses();
+            this.playerTwoWon()  // Player 2 middle row win
             this.resetBoard()
         } else if (this.board['c1'] === this.players[1].token && this.board['c2'] === this.players[1].token && this.board['c3'] === this.players[1].token) {
-            this.players[1].increaseWins(); // Player 2 bottom row win
-            this.players[0].increaseLosses();
+            this.playerTwoWon()  // Player 2 bottom row win
             this.resetBoard()
         } else if (this.board['a1'] === this.players[1].token && this.board['b1'] === this.players[1].token && this.board['c1'] === this.players[1].token) {
-            this.players[1].increaseWins(); // Player 2 left column win
-            this.players[0].increaseLosses();
+            this.playerTwoWon()  // Player 2 left column win
             this.resetBoard()
         } else if (this.board['a2'] === this.players[1].token && this.board['b2'] === this.players[1].token && this.board['c2'] === this.players[1].token) {
-            this.players[1].increaseWins(); // Player 2 middle column win
-            this.players[0].increaseLosses();
+            this.playerTwoWon()  // Player 2 middle column win
             this.resetBoard()
         } else if (this.board['a3'] === this.players[1].token && this.board['b3'] === this.players[1].token && this.board['c3'] === this.players[1].token) {
-            this.players[1].increaseWins(); // Player 2 right column win
-            this.players[0].increaseLosses();
+            this.playerTwoWon()  // Player 2 right column win
             this.resetBoard()
         } else if (this.board['a1'] === this.players[1].token && this.board['b2'] === this.players[1].token && this.board['c3'] === this.players[1].token) {
-            this.players[1].increaseWins(); // Player 2 back-slash win
-            this.players[0].increaseLosses();
+            this.playerTwoWon()  // Player 2 back-slash win
             this.resetBoard()
         } else if (this.board['a3'] === this.players[1].token && this.board['b2'] === this.players[1].token && this.board['c1'] === this.players[1].token) {
-            this.players[1].increaseWins(); // Player 2 forward-slash win
-            this.players[0].increaseLosses();
+            this.playerTwoWon()  // Player 2 forward-slash win
             this.resetBoard()
-        } else if (this.board['a1'] != '' && this.board['a2'] != '' && this.board['a3'] != '' && this.board['b1'] != '' && this.board['b2'] != '' && this.board['b3'] != '' && this.board['c1'] != '' && this.board['c2'] != '' && this.board['c3'] != ''){
-            this.players[0].increaseTies();
-            this.players[1].increaseTies();
-            }
         }
     }
 }

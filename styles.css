@@ -27,7 +27,7 @@ section{
     justify-content: center;
 }
 
-.player-title, .player-1-win-count, .player-2-win-count, .move-indicator {
+.player-title, .player-1-win-count, .player-1-loss-count, .player-1-draw-count, .player-2-win-count, .player-2-loss-count, .player-2-draw-count, .move-indicator {
     font-family: atari;
     font-size: 50;
     margin: 0px;
@@ -37,7 +37,7 @@ section{
     background-color: rgba(240, 255, 255, .65);
     text-align: center;
     width: 25%;
-    height: 200px;
+    height: 250px;
     margin: 25px;
 }
 
@@ -59,6 +59,7 @@ td {
     border: 3px solid #000000;
     text-align: center;
     padding: 8px;
+    font-size: 50;
 }
 td:first-child{
     border-left: none;
