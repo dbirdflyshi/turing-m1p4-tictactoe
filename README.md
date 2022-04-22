@@ -60,27 +60,15 @@ The spec for this project can be found [here](https://frontend.turing.edu/projec
 You can view the published page [Here]()
 
 ## Sources
-[Keeping the table the same size regardless of content](https://stackoverflow.com/questions/4457506/set-the-table-column-width-constant-regardless-of-the-amount-of-text-in-its-cell) 
-
-[Background size maipulation](https://www.w3schools.com/cssref/css3_pr_background-size.asp) 
-
-[Pausing your site](https://www.w3schools.com/jsref/met_win_settimeout.asp) 
-
-[Random image as your background](https://stackoverflow.com/questions/18288950/random-fullscreen-background-image-on-browser-refresh) 
-
-[Space Wallpapers](https://wallpaperaccess.com/4k-space) 
-
-[Preventing double border lines in your table](https://stackoverflow.com/questions/49746714/html-table-border-double-line) 
-
-[Removing the outer table border](https://stackoverflow.com/questions/35571603/removing-outer-border-in-html-table) 
-
-[Hex to RGBA](https://rgbacolorpicker.com/hex-to-rgba) 
-
-[Space Fonts](https://www.fontspace.com/space-mission-font-f56190) 
-
-[Making the background transparent but not the text iteself](https://stackoverflow.com/questions/15449280/making-text-background-transparent-but-not-text-itself) 
-
-[Using fonts downloaded from the internet on your page](https://stackoverflow.com/questions/3245141/using-otf-fonts-on-web-browsers) 
-
-[Atari font](https://www.fontspace.com/sf-atarian-system-font-f6230) 
-
+* [Keeping the table the same size regardless of content](https://stackoverflow.com/questions/4457506/set-the-table-column-width-constant-regardless-of-the-amount-of-text-in-its-cell) 
+* [Background size maipulation](https://www.w3schools.com/cssref/css3_pr_background-size.asp) 
+* [Pausing your site](https://www.w3schools.com/jsref/met_win_settimeout.asp) 
+* [Random image as your background](https://stackoverflow.com/questions/18288950/random-fullscreen-background-image-on-browser-refresh) 
+* [Space Wallpapers](https://wallpaperaccess.com/4k-space) 
+* [Preventing double border lines in your table](https://stackoverflow.com/questions/49746714/html-table-border-double-line) 
+* [Removing the outer table border](https://stackoverflow.com/questions/35571603/removing-outer-border-in-html-table) 
+* [Hex to RGBA](https://rgbacolorpicker.com/hex-to-rgba) 
+* [Space Fonts](https://www.fontspace.com/space-mission-font-f56190) 
+* [Making the background transparent but not the text iteself](https://stackoverflow.com/questions/15449280/making-text-background-transparent-but-not-text-itself) 
+* [Using fonts downloaded from the internet on your page](https://stackoverflow.com/questions/3245141/using-otf-fonts-on-web-browsers) 
+* [Atari font](https://www.fontspace.com/sf-atarian-system-font-f6230) 
